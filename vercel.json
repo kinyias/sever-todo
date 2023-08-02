@@ -1,6 +1,6 @@
 {
-    "version": 2,
-    "name": "server-todo",
-    "builds": [{ "src": "/api/app.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "/(.*)", "dest": "/api/app.js" }]
-  }
+  "version": 2,
+  "name": "server-todo",
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "index.js" }]
+}
